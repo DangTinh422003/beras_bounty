@@ -1,0 +1,24 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* css base */
+@layer base {
+  @font-face {
+    font-family: 'MonumentExtended';
+    src:
+      local('MonumentExtended'),
+      url('../../../public/fonts/MonumentExtended-Regular.otf') format('woff');
+  }
+
+  body {
+    @apply bg-black text-white;
+  }
+}
+
+/* custom class */
+@layer components {
+  .purple-gradient {
+    @apply inline-block bg-gradient-to-r from-blue via-purple to-blue bg-clip-text text-transparent;
+  }
+}
